@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+
+<!--Navbar-->
+<div class="headerContainer">
+
+    <nav class="navbar navbar-light navbar-1 white">
+
+        <!-- Navbar brand -->
+        <h4>Smarandachescu Mircea</h4>
+        <h2 class="headerText">Facultatea de Automatica, Calculatoare si Electronica</h2>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+                aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/viewmyprofile">View my Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout" role="button">Log Out</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
+
+</div>
+
+<div class="courseWrapper">
+    <div class="titleContainer">
+        <h3 class="titleText">Computer Networks</h3>
+        <div class="projectRow">
+            <h3 class="courseTitle">Computer Networks Course</h3>
+            <div class="assignmentWrapper">
+                <h2 class="assignment">Upload your assignments here</h2>
+                <div class=>
+                    <form method="POST" action="secrets" enctype="multipart/form-data" class="formUpload">
+                        <input type="file" name="file" class="fileUpload"/>
+                        <input type="submit" value="Upload"/>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<%- include('partials/footer') %>
