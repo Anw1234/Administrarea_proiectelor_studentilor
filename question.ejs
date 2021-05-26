@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+
+<a id="gohome" href="/"><h1 class="logo">Lecture <span class="blue"  style= "color:#007BFF">ROOM</span></h1></a>
+<form  method="POST" class="qForm">
+    <div class="form-row" id="nameForm">
+        <div class="col-md-4 mb-3" ">
+            <label for="validationDefault01">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Mircea" value=""name="firstname" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefault02">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Andrei" value=""name="lastname" required>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label for="validationDefaultUsername">Username</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" name="username"aria-describedby="inputGroupPrepend2" required>
+            </div>
+        </div>
+    </div>
+    <div class="form-row" id="cityControl">
+        <div class="col-md-6 mb-3">
+            <label for="validationDefault03">City</label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="City" name="city" required>
+        </div>
+
+    </div>
+    <div class="form-group">
+
+    </div>
+    <button class="btn btn-primary questionFormButton" type="submit">Submit form</button>
+</form>
+
+
+<%- include('partials/footer') %>
